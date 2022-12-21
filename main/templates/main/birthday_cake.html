@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BirthDay Cake</title>
+    <link rel="stylesheet" href="{% static 'css/birth_day_cake/style.css' %}">
+    <meta http-equiv="refresh" content="15; url = {% url 'main:birthday_balloons' %}"/>
+    <link rel="shortcut icon" href="{% static 'img/BirthdayCake.png' %}">
+</head>
+<body>
+<embed src="{% static 'music/BirthdayClapSound.m4a' %}" loop="false" autostart="true" width="2" height="0">
+<div class="container center">
+    <div class="candle"></div>
+    <div class="layer-1"></div>
+    <div class="layer-2"></div>
+    <div class="layer-3"></div>
+</div>
+</body>
+</html>
